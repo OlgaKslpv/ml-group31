@@ -2,9 +2,9 @@ import io
 import streamlit as st
 import numpy as np
 from transformers import pipeline
-#from tensorflow.keras.applications import EfficientNetB0
-#from tensorflow.keras.saving.hdf5_format import 
-#from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.saving.hdf5_format import 
+from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
 #Проверка теста
 
 classifier = pipeline("sentiment-analysis",
