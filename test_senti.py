@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from senti_app import app
+from senti import app
 
 client = TestClient(app)
 
