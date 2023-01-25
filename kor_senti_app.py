@@ -11,7 +11,6 @@ form = st.form(key='my_form')
 text = form.text_input(label='Введите текст')
 submit_button = form.form_submit_button(label='Выполнить')
 
-
 def create_score_text(clsfr, txt):
     result = clsfr(txt)
     st.write('**Оценка фразы:** ' + result[0].get('label', 'no res'))
