@@ -22,7 +22,7 @@
 
 API приложение развернутое на яндекс облаке, для передачи запроса был применен метод post и приложение postman
 
-![image](https://user-images.githubusercontent.com/118006933/215146049-599d74ca-a6b4-432a-b6ae-19b802c737ae.png)
+####![image](https://user-images.githubusercontent.com/118006933/215146049-599d74ca-a6b4-432a-b6ae-19b802c737ae.png)
 
 Web приложение развернутое в облаке Streamlit
 
