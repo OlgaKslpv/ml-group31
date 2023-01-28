@@ -30,7 +30,7 @@ API приложение развернутое на яндекс облаке, 
 
 Web приложение развернутое в облаке Streamlit
 
-<img src="https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png" width="960" height="540">
+<img src="https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png" width="640" height="480">
 
 ### Запуск и результаты тестов
 
