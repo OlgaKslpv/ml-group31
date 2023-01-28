@@ -40,10 +40,10 @@ Web приложение развернутое в облаке Streamlit
 
 Для API приложения были написаны тесты. Запуск осуществляется введением команды pytest в каталоге с приложением, так же на GitHub была настроена система  Continuous Integration таким образом, что при выполнении push в репозиторий GitHub выполняется автоматический запуск тестов.
 
-![image](https://user-images.githubusercontent.com/118006933/215255939-fb817cf0-75b4-4e5c-b1f8-36685e6d475a.png)<img src="https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png" width="780" height="560">
-![image](https://user-images.githubusercontent.com/118006933/215255852-d04970bc-cc31-491d-9054-b8249564f2be.png)<img src="https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png" width="780" height="560">
+<img src="https://user-images.githubusercontent.com/118006933/215255939-fb817cf0-75b4-4e5c-b1f8-36685e6d475a.png" width="780" height="560">
+<img src="https://user-images.githubusercontent.com/118006933/215255852-d04970bc-cc31-491d-9054-b8249564f2be.png" width="780" height="560">
 
-![image](https://user-images.githubusercontent.com/118006933/215255898-589adf39-0319-4dbe-bd95-64c77a0058ba.png)<img src="https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png" width="1024" height="768">
+<img src="https://user-images.githubusercontent.com/118006933/215255898-589adf39-0319-4dbe-bd95-64c77a0058ba.png" width="1024" height="768">
 
 ### Источники
 
