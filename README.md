@@ -42,9 +42,9 @@ Web приложение развернутое в облаке Streamlit
 
 ![image](https://user-images.githubusercontent.com/118006933/215255939-fb817cf0-75b4-4e5c-b1f8-36685e6d475a.png)
 
-![image](https://user-images.githubusercontent.com/118006933/215255898-589adf39-0319-4dbe-bd95-64c77a0058ba.png)
-
 ![image](https://user-images.githubusercontent.com/118006933/215255852-d04970bc-cc31-491d-9054-b8249564f2be.png)
+
+![image](https://user-images.githubusercontent.com/118006933/215255898-589adf39-0319-4dbe-bd95-64c77a0058ba.png)
 
 ### Источники
 
