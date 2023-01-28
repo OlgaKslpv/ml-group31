@@ -21,6 +21,7 @@
 ### Запуск и результаты работы проекта
 
 ![image](https://user-images.githubusercontent.com/118006933/215146049-599d74ca-a6b4-432a-b6ae-19b802c737ae.png)
+![Web_app](https://user-images.githubusercontent.com/118010434/215248116-eb4c1364-8807-43ed-bb2b-b86abfa0ea81.png)
 
 ### Запуск и результаты тестов
 
