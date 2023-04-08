@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 from transformers import pipeline
 from pydantic import BaseModel
+from fastapi import HTTPException
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request, exc):
+    return {"error": f"{exc.detail}"}
 
 class Item(BaseModel):
     text: str
