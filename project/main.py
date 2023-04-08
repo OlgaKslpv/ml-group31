@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from transformers import pipeline
 from pydantic import BaseModel
 from fastapi import HTTPException
+from typing import List, Dict, Union
 
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request, exc):
@@ -15,7 +16,7 @@ def preprocess(text: str) -> str:
 
 def postprocess(result: List[Dict[str, Union[str, float]]]) -> Dict[str, Union[str, float]]:
     return result[0]
-        
+
 app = FastAPI()
 classifier = pipeline("sentiment-analysis",
                       model="snunlp/KR-FinBert-SC")
@@ -27,5 +28,5 @@ def root():
 @app.post("/predict/")
 def predict(item: Item):
     processed_text = preprocess(item.text)
-raw_result = classifier(processed_text)
-return postprocess(raw_result)
+    raw_result = classifier(processed_text)
+    return postprocess(raw_result)
