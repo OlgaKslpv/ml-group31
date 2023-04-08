@@ -4,10 +4,6 @@ from pydantic import BaseModel
 from fastapi import HTTPException
 from typing import List, Dict, Union
 
-@app.exception_handler(HTTPException)
-async def http_exception_handler(request, exc):
-    return {"error": f"{exc.detail}"}
-
 class Item(BaseModel):
     text: str
 
@@ -18,6 +14,11 @@ def postprocess(result: List[Dict[str, Union[str, float]]]) -> Dict[str, Union[s
     return result[0]
 
 app = FastAPI()
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request, exc):
+    return {"error": f"{exc.detail}"}
+
 classifier = pipeline("sentiment-analysis",
                       model="snunlp/KR-FinBert-SC")
 
