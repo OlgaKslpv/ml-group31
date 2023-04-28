@@ -1,7 +1,6 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from transformers import pipeline
 from pydantic import BaseModel
-from fastapi import HTTPException
 from typing import List, Dict, Union
 
 class Item(BaseModel):
@@ -31,3 +30,7 @@ def predict(item: Item):
     processed_text = preprocess(item.text)
     raw_result = classifier(processed_text)
     return postprocess(raw_result)
+
+@app.get("/emotions/")
+def get_emotions():
+    return {"emotions": ["positive", "neutral", "negative"]}
