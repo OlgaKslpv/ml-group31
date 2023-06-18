@@ -10,7 +10,7 @@ def test_read_main():
     assert response.json() == {"message": "Оценка эмоциональной окраски текста на корейском языке"}
 
 
-def test_predict_positive():
+def test_predict_neutral():
     response = client.post("/predict/",
                            json={"text": "서귀포시 강창식 전 국장 등 25명 정년·명예퇴임"})
     json_data = response.json()
@@ -33,4 +33,3 @@ def test_get_emotions():
     response = client.get("/emotions/")
     assert response.status_code == 200
     assert response.json() == {"emotions": ["positive", "neutral", "negative"]}
-    
