@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from transformers import pipeline
 from pydantic import BaseModel
 from fastapi import HTTPException
@@ -44,8 +44,12 @@ def predict(item: Item):
     raw_result = classifier(processed_text)
     return postprocess(raw_result)
 
+@app.get("/emotions/")
+def get_emotions():
+    return {"emotions": ["positive", "neutral", "negative"]}
+
 @app.get("/get-user", summary="Получить пользователя по ID")
 def get_user_by_id(user_id: int):
     if user_id not in user_repository:
         raise HTTPException(status_code=404, detail="User not found")
-    return {"user": user_repository[user_id]}
+    return {"user": user_repository[user_id]} 
